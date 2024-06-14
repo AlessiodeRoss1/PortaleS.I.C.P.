@@ -11,8 +11,8 @@ function handleClientLoad() {
 
 function initClient() {
     gapi.client.init({
-        apiKey: API_KEY,
-        clientId: CLIENT_ID,
+        apiKey: AIzaSyAvCqJSg-oj1CV5evEAkPqqoFOVXqzGlq4,
+        clientId: 904784593485-a6tntv42n6118vn6ura18akah9rf6p3k.apps.googleusercontent.com,
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES
     }).then(function () {
@@ -26,7 +26,7 @@ function handleFormSubmit(event) {
     event.preventDefault();
     let formData = new FormData(event.target);
     let values = Object.fromEntries(formData.entries());
-    let sheetId = 'TUO_SHEET_ID'; 
+    let sheetId = '1p4XfgXJivhstqz795DLvKAHjZs9kv-8bvIfWzzF9YU4'; 
 
     gapi.client.sheets.spreadsheets.values.get({
         spreadsheetId: 1p4XfgXJivhstqz795DLvKAHjZs9kv-8bvIfWzzF9YU4,
